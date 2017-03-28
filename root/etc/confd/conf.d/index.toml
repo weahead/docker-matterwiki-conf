@@ -1,0 +1,6 @@
+[template]
+src = "index.tmpl"
+dest = "/usr/local/etc/matterwiki/index.js"
+keys = [
+  "/self/service/metadata"
+]
