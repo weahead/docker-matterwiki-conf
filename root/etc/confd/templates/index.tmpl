@@ -1,0 +1,9 @@
+{{if exists "/self/service/metadata/auth_secret"}}
+    module.exports = {
+        'auth_secret': '{{getv "/self/service/metadata/auth_secret"}}'
+    };
+{{else}}
+    module.exports = {
+        'auth_secret': 'thisisasecretkeyforjwtauth'
+    };
+{{end}}
